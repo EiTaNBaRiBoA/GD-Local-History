@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bho837dkjii8i"]
+[gd_scene load_steps=3 format=3 uid="uid://bho837dkjii8i"]
 
-[ext_resource type="Script" path="res://addons/gd_local_history/ui/local_history_panel/local_history_panel.gd" id="1_5wwrs"]
+[ext_resource type="Script" uid="uid://cwjob6rly8mk4" path="res://addons/gd_local_history/ui/local_history_panel/local_history_panel.gd" id="1_5wwrs"]
+
+[sub_resource type="GDScriptSyntaxHighlighter" id="GDScriptSyntaxHighlighter_5v0lp"]
 
 [node name="LocalHistoryPanel" type="Control"]
 layout_mode = 3
@@ -29,6 +31,7 @@ layout_mode = 2
 editable = false
 scroll_smooth = true
 minimap_draw = true
+syntax_highlighter = SubResource("GDScriptSyntaxHighlighter_5v0lp")
 draw_tabs = true
 gutters_draw_line_numbers = true
 gutters_zero_pad_line_numbers = true
