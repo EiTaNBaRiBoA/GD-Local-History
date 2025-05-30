@@ -4,8 +4,6 @@ class_name LocalHistoryPanel
 
 @onready var tree: Tree = $HSplitContainer/Tree
 @onready var code_edit: CodeEdit = $HSplitContainer/CodeEdit
-const RELOAD = preload("res://addons/gd_local_history/ui/reload.svg")
-const REMOVE = preload("res://addons/gd_local_history/ui/remove.svg")
 var _tree_root: TreeItem
 var _previous_scroll_value: int = 0
 
@@ -22,9 +20,9 @@ func create_file_tree_item(file_name: String) -> void:
 	var child: TreeItem = tree.create_item(_tree_root)
 	child.set_text(0, file_name)
 	child.set_custom_color(0, Color.WHITE_SMOKE)
-	child.add_button(0, REMOVE, 1)
+	child.add_button(0, EditorInterface.get_base_control().get_theme_icon("Remove", "EditorIcons"), 1)
 	child.set_button_color(0, 0, Color.INDIAN_RED)
-	child.add_button(0, RELOAD, 2)
+	child.add_button(0, EditorInterface.get_base_control().get_theme_icon("Reload", "EditorIcons"), 2)
 	child.set_button_tooltip_text(0, 0, "Delete %s" % file_name)
 	child.set_button_tooltip_text(0, 1, "Refresh %s" % file_name)
 
