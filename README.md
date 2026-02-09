@@ -1,9 +1,9 @@
 <div align="center">
  <img height="200" src="icon.svg" width="200"/>
 </div>
-<img src="https://github.com/jaydensipe/GD-Local-History/assets/47132280/b65a93e1-3348-4672-870b-9032d932415e"/>
+<img width="3054" height="697" alt="image" src="https://github.com/user-attachments/assets/389b8220-6810-4402-9abe-ad5184bd67ca" />
 <br/>
-<h3 align="center">✨ Currently supports: <b><i>Godot 4.3+</i></b></h3>
+<h3 align="center">✨ Currently supports: <b><i>Godot 4.6+</i></b></h3>
 
 <h2>Features 📃</h2>
 <ul>
