@@ -1,10 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bho837dkjii8i"]
+[gd_scene format=3 uid="uid://bho837dkjii8i"]
 
 [ext_resource type="Script" uid="uid://cwjob6rly8mk4" path="res://addons/gd_local_history/ui/local_history_panel/local_history_panel.gd" id="1_5wwrs"]
 
 [sub_resource type="GDScriptSyntaxHighlighter" id="GDScriptSyntaxHighlighter_5v0lp"]
 
-[node name="LocalHistoryPanel" type="Control"]
+[node name="LocalHistoryPanel" type="Control" unique_id=1091275185]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,20 +13,21 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5wwrs")
 
-[node name="HSplitContainer" type="HSplitContainer" parent="."]
+[node name="HSplitContainer" type="HSplitContainer" parent="." unique_id=1897965899]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+split_offsets = PackedInt32Array(450)
 split_offset = 450
 
-[node name="Tree" type="Tree" parent="HSplitContainer"]
+[node name="Tree" type="Tree" parent="HSplitContainer" unique_id=1479380289]
 layout_mode = 2
 hide_root = true
 
-[node name="CodeEdit" type="CodeEdit" parent="HSplitContainer"]
+[node name="CodeEdit" type="CodeEdit" parent="HSplitContainer" unique_id=1425886920]
 layout_mode = 2
 editable = false
 scroll_smooth = true
