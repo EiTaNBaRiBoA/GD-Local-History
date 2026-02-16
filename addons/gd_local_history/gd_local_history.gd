@@ -2,7 +2,7 @@
 extends EditorPlugin
 class_name GDLocalHistory
 
-var local_history_panel: LocalHistoryPanel = preload("res://addons/gd_local_history/ui/local_history_panel/local_history_panel.tscn").instantiate()
+var local_history_panel: LocalHistoryPanel = load("uid://bho837dkjii8i").instantiate()
 static var save_file_path: String = ""
 static var _setting_allow_global_directory: StringName = "local_history/config/allow_global_directory"
 static var _setting_save_file_path: StringName = "local_history/config/save_file_path"
